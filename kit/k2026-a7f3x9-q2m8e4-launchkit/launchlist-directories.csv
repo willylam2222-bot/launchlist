@@ -1,0 +1,91 @@
+name,category,dr,price,dofollow,traffic_est,turnaround,type,submit_url,url,blurb
+Hacker News (Show HN),general,92,free,true,10M/mo,instant,community,https://news.ycombinator.com/showhn.html,https://news.ycombinator.com,"Show HN can send a spike of technical, high-intent visitors. Front page is a lottery but free."
+r/SideProject,general,92,free,false,—,instant,community,https://www.reddit.com/r/SideProject/submit,https://www.reddit.com/r/SideProject,"Makers sharing side projects. Lead with the story, not the link."
+r/startups,general,92,free,false,—,instant,community,https://www.reddit.com/r/startups/submit,https://www.reddit.com/r/startups,Large startup community; strict self-promo rules — contribute first.
+r/SaaS,saas,92,free,false,—,instant,community,https://www.reddit.com/r/SaaS/submit,https://www.reddit.com/r/SaaS,SaaS founders community; share launches and learnings.
+r/EntrepreneurRideAlong,general,92,free,false,—,instant,community,https://www.reddit.com/r/EntrepreneurRideAlong/submit,https://www.reddit.com/r/EntrepreneurRideAlong,Build-in-public friendly subreddit for founders.
+r/InternetIsBeautiful,general,92,free,false,—,instant,community,https://www.reddit.com/r/InternetIsBeautiful/submit,https://www.reddit.com/r/InternetIsBeautiful,Huge sub for novel/useful sites; can send a big spike if it fits.
+r/roastmystartup,general,92,free,false,—,instant,community,https://www.reddit.com/r/roastmystartup/submit,https://www.reddit.com/r/roastmystartup,Post for blunt feedback on your startup.
+Product Hunt,general,91,free,false,6M/mo,schedule a day,launch,https://www.producthunt.com/posts/new,https://www.producthunt.com,"The flagship launch platform. A top-5 daily finish drives real traffic, signups, and press."
+Crunchbase,general,91,freemium,false,40M/mo,days,directory,https://www.crunchbase.com/register,https://www.crunchbase.com,The company/funding database. A profile is high-DR and widely referenced.
+SourceForge,saas,90,free,true,20M/mo,days,directory,https://sourceforge.net/create/,https://sourceforge.net,Long-standing software listing/download site; high DR.
+dev.to,dev,90,free,true,10M/mo,instant,community,https://dev.to/new,https://dev.to,Developer blogging community; write a launch/build post with your link.
+Awwwards,design,90,paid,false,3M/mo,days,gallery,https://www.awwwards.com/submit/,https://www.awwwards.com,"Premier web design awards; paid submission, huge DR and prestige."
+AlternativeTo,saas,85,free,false,9M/mo,days,directory,https://alternativeto.net/manage-app/submit-app/,https://alternativeto.net,Massive 'alternatives to X' site; being listed captures competitor intent.
+Hashnode,dev,84,free,true,3M/mo,instant,community,https://hashnode.com,https://hashnode.com,Developer blogging platform; publish a launch story.
+G2,saas,83,free,false,20M/mo,weeks,review,https://www.g2.com/products/new,https://www.g2.com,B2B review platform. Reviews drive comparison-intent buyers; claiming a profile is free.
+Capterra,saas,82,free,false,12M/mo,weeks,review,https://www.capterra.com/vendors/sign-up,https://www.capterra.com,Gartner-owned B2B software marketplace with high buyer intent.
+F6S,general,80,free,false,2M/mo,instant,directory,https://www.f6s.com,https://www.f6s.com,Founder network + programs/accelerators directory; free company profile.
+GetApp,saas,80,free,false,6M/mo,weeks,review,https://www.getapp.com/list-your-software/,https://www.getapp.com,Gartner Digital Markets marketplace; free vendor listing.
+CSS Design Awards,design,80,paid,false,1M/mo,days,gallery,https://www.cssdesignawards.com/submit-your-site.php,https://www.cssdesignawards.com,"Web design awards platform; paid submission, strong DR."
+Indie Hackers,general,78,free,true,1.5M/mo,instant,community,https://www.indiehackers.com/products,https://www.indiehackers.com,Post your product plus a build/launch story. Warm founder audience; established accounts do best.
+Software Advice,saas,78,free,false,3M/mo,weeks,review,https://www.softwareadvice.com/vendors/,https://www.softwareadvice.com,Gartner Digital Markets review site; free listing.
+Lobsters,dev,78,free,true,500K/mo,instant,community,https://lobste.rs,https://lobste.rs,Invite-only technical community; quality dev audience.
+One Page Love,design,78,paid,true,500K/mo,days,gallery,https://onepagelove.com/submit,https://onepagelove.com,"Curated one-page website showcase; paid submission, strong DR."
+There's An AI For That,ai,76,paid,false,12M/mo,days (paid),directory,https://theresanaiforthat.com/submit/,https://theresanaiforthat.com,The largest AI-tools directory. Huge traffic; listing is paid but high-intent.
+TrustRadius,saas,76,free,false,2M/mo,weeks,review,https://www.trustradius.com/vendors,https://www.trustradius.com,In-depth B2B reviews; free vendor profile.
+GoodFirms,saas,76,free,false,1.5M/mo,weeks,review,https://www.goodfirms.co/get-listed,https://www.goodfirms.co,B2B software + services reviews; free listing.
+SiteInspire,design,76,free,false,400K/mo,days,gallery,https://www.siteinspire.com/submit,https://www.siteinspire.com,Curated web design showcase; free submission.
+BetaList,general,75,freemium,true,400K/mo,weeks (free)/days (paid),launch,https://betalist.com/submit,https://betalist.com,For early / pre-launch products. Free queue is slow; paid jumps the line.
+TLDR,dev,75,paid,false,1M+ subs,days,newsletter,https://tldr.tech/advertise,https://tldr.tech,Huge daily dev/tech newsletter; sponsorship reaches a technical audience.
+Betalist Newsletter,general,75,freemium,true,50K subs,weeks,newsletter,https://betalist.com/submit,https://betalist.com,BetaList's newsletter goes out with featured early-stage products.
+EU-Startups,general,74,paid,true,400K/mo,days,directory,https://www.eu-startups.com/directory/,https://www.eu-startups.com,"Leading European startup news site + directory; strong DR, EU focus."
+StackShare,dev,74,free,true,2M/mo,days,directory,https://stackshare.io/tools/new,https://stackshare.io,Developer tech-stack community; add your dev tool.
+Land-book,design,74,freemium,true,600K/mo,days,gallery,https://land-book.com/submit,https://land-book.com,Landing-page gallery; great if your site design is strong.
+Startup Stash,general,72,paid,true,500K/mo,days,directory,https://startupstash.com/add-startup/,https://startupstash.com,Curated resource directory with strong DR; listing is paid but durable.
+Futurepedia,ai,72,freemium,false,3M/mo,days,directory,https://www.futurepedia.io/submit-tool,https://www.futurepedia.io,Popular AI-tools directory. Free listing plus paid featured placement.
+GrowthHackers,general,72,free,true,300K/mo,instant,community,https://growthhackers.com,https://growthhackers.com,Growth marketing community; share posts and case studies.
+NextBigWhat,general,70,paid,true,300K/mo,days,directory,https://nextbigwhat.com,https://nextbigwhat.com,Indian tech media + product listings.
+Toolify,ai,70,freemium,true,4M/mo,days,directory,https://www.toolify.ai/submit,https://www.toolify.ai,AI-tools directory with strong traffic and a free submission tier.
+Slant,saas,70,free,true,1M/mo,days,directory,https://www.slant.co,https://www.slant.co,Crowdsourced product recommendations; add your product to relevant questions.
+Console.dev,dev,70,free,true,100K subs,weeks,newsletter,https://console.dev/submit/,https://console.dev,Curated newsletter of dev tools; free submission for consideration.
+LibHunt,dev,70,free,true,1M/mo,days,directory,https://www.libhunt.com,https://www.libhunt.com,Open-source library discovery and alternatives; great for OSS/dev tools.
+Peerlist Launchpad,general,68,free,true,300K/mo,schedule a week,launch,https://peerlist.io/launchpad,https://peerlist.io/launchpad,Weekly launch on a professional network; solid DR and a dofollow profile link.
+Future Tools,ai,68,free,false,1.5M/mo,days,directory,https://www.futuretools.io/submit-a-tool,https://www.futuretools.io,Matt Wolfe's curated AI-tools collection; free submission.
+SaaSworthy,saas,68,free,false,1M/mo,days,directory,https://www.saasworthy.com/vendors,https://www.saasworthy.com,SaaS discovery + rankings directory with solid organic traffic.
+Godly,design,68,free,true,400K/mo,days,gallery,https://godly.website/submit,https://godly.website,Astronomically good web design inspiration; free submission.
+Lapa Ninja,design,66,free,true,400K/mo,days,gallery,https://www.lapa.ninja/submit/,https://www.lapa.ninja,Landing-page design inspiration gallery; free submission.
+SaaSHub,saas,65,freemium,true,700K/mo,days,directory,https://www.saashub.com/submit,https://www.saashub.com,Software discovery + alternatives directory; good evergreen backlink and alternative-page SEO.
+Httpster,design,64,free,true,200K/mo,days,gallery,https://httpster.net,https://httpster.net,Web design inspiration gallery.
+Crozdesk,saas,63,freemium,false,500K/mo,days,directory,https://vendor.crozdesk.com,https://crozdesk.com,Business software discovery platform; free vendor listing.
+Tekpon,saas,62,freemium,true,400K/mo,days,directory,https://tekpon.com/get-listed/,https://tekpon.com,SaaS marketplace + podcast; free and paid listings.
+Minimal Gallery,design,62,free,true,150K/mo,days,gallery,https://minimal.gallery/submit/,https://minimal.gallery,Minimal web design inspiration gallery.
+All Top Startups,general,60,paid,true,150K/mo,days,directory,https://alltopstartups.com/submit-startup/,https://alltopstartups.com,Startup blog + directory; paid submission for a feature and backlink.
+DevHunt,dev,60,free,true,120K/mo,schedule a week,launch,https://devhunt.org,https://devhunt.org,"Launch platform for developer tools, community-run."
+Supertools,ai,60,free,false,500K/mo,days,directory,https://supertools.therundown.ai,https://supertools.therundown.ai,"Curated AI tools grouped by category, by The Rundown."
+Serchen,saas,60,freemium,true,300K/mo,days,directory,https://www.serchen.com/add-listing/,https://www.serchen.com,SaaS directory and reviews; free listing option.
+Uneed,tools,58,freemium,true,150K/mo,schedule a day,launch,https://www.uneed.best/submit-a-tool,https://www.uneed.best,"Daily tool launch platform, PH-style but smaller. Free queue plus paid skip."
+TopAI.tools,ai,58,freemium,true,800K/mo,days,directory,https://topai.tools/submit,https://topai.tools,AI tool discovery directory with a free submission option.
+WIP,general,58,paid,true,80K/mo,instant,community,https://wip.co,https://wip.co,Maker community for build-in-public; paid membership.
+SaaS Landing Page,design,58,freemium,true,150K/mo,days,gallery,https://saaslandingpage.com/submit/,https://saaslandingpage.com,Gallery of SaaS landing pages; free submission option.
+aixploria,ai,57,freemium,true,600K/mo,days,directory,https://www.aixploria.com/en/submit-ai/,https://www.aixploria.com,Large multilingual AI-tools directory.
+Betapage,general,56,freemium,true,120K/mo,days,directory,https://betapage.co/site/submit,https://betapage.co,Curated directory of new tech startups and products.
+Dang.ai,ai,56,freemium,true,300K/mo,days,directory,https://dang.ai/submit,https://dang.ai,Growing AI-tools directory with a free listing tier and dofollow link.
+Launching Next,general,55,freemium,true,90K/mo,days,directory,https://www.launchingnext.com/submit/,https://www.launchingnext.com,Directory of new startups; free listing with a paid fast-track.
+ProductHunt Alternatives (OpenAlternative),dev,55,free,true,200K/mo,days,directory,https://openalternative.co/submit,https://openalternative.co,Directory of open-source alternatives to popular software; great for OSS tools.
+OpenTools,ai,55,freemium,true,300K/mo,days,directory,https://opentools.ai,https://opentools.ai,AI tools directory with reviews and a free listing.
+The Sample,general,55,free,false,—,days,newsletter,https://thesample.ai,https://thesample.ai,Newsletter discovery engine; get your newsletter in front of readers.
+EasyWithAI,ai,54,freemium,true,300K/mo,days,directory,https://easywithai.com/submit-ai-tool/,https://easywithai.com,AI tools directory with free and featured listing options.
+StartupBuffer,general,52,freemium,true,120K/mo,days,directory,https://startupbuffer.com/site/submit,https://startupbuffer.com,"Startup directory; quick dofollow backlink, paid featured option."
+Insidr AI,ai,52,freemium,true,250K/mo,days,directory,https://www.insidr.ai/submit-tool/,https://www.insidr.ai,AI tools directory and newsletter.
+Makerlog,general,52,free,true,60K/mo,instant,community,https://getmakerlog.com,https://getmakerlog.com,Community of makers logging their work in public.
+SideProjectors,general,50,free,true,70K/mo,instant,directory,https://www.sideprojectors.com/project/submit,https://www.sideprojectors.com,List (or sell) a side project. Free dofollow listing.
+Fazier,general,50,freemium,true,100K/mo,schedule a day,launch,https://fazier.com/submit,https://fazier.com,PH-alternative launch board; offers a launch badge and dofollow link.
+aitools.fyi,ai,50,freemium,true,200K/mo,days,directory,https://aitools.fyi/submit,https://aitools.fyi,AI tools directory; free listing plus paid featured.
+SaaS AI Tools,ai,50,freemium,true,200K/mo,days,directory,https://saasaitools.com/submit/,https://saasaitools.com,AI + SaaS tools directory and newsletter.
+Product Hunt Alternatives (SaaSPirate),saas,50,freemium,true,150K/mo,days,directory,https://saaspirate.com/submit,https://saaspirate.com,SaaS deals + directory; good for products with an offer.
+AI Valley,ai,49,freemium,true,150K/mo,days,directory,https://aivalley.ai/submit/,https://aivalley.ai,AI tools and news directory.
+10words,general,48,freemium,true,60K/mo,days,directory,https://10words.io/submit,https://10words.io,Describe your product in 10 words. Simple listing plus a dofollow link.
+AI Scout,ai,48,freemium,true,150K/mo,days,directory,https://aiscout.net/submit-tool/,https://aiscout.net,AI tool listings across categories; free submission tier.
+AItoolnet,ai,47,freemium,true,200K/mo,days,directory,https://www.aitoolnet.com/submit,https://www.aitoolnet.com,AI tool discovery directory with free submissions.
+Startups.fyi,general,46,freemium,true,40K/mo,days,directory,https://www.startups.fyi/submit,https://www.startups.fyi,Directory of startups and tools; free plus featured paid.
+AI Tools Directory (aitoolsdirectory),ai,46,freemium,true,120K/mo,days,directory,https://aitoolsdirectory.com/submit,https://aitoolsdirectory.com,General AI tools directory; free and paid listings.
+TinyLaunch,general,45,freemium,true,50K/mo,schedule a day,launch,https://www.tinylaunch.com,https://www.tinylaunch.com,Lightweight daily launch spot for indie makers.
+Startup Inspire,general,44,freemium,true,30K/mo,days,directory,https://www.startupinspire.com/dashboard/startup/create,https://www.startupinspire.com,Community startup directory with a free listing option.
+MicroLaunch,general,44,freemium,true,40K/mo,schedule a day,launch,https://microlaunch.net,https://microlaunch.net,Launch board focused on micro-SaaS and indie products.
+Pitchwall,general,42,free,true,20K/mo,instant,launch,https://pitchwall.co/submit,https://pitchwall.co,Post your startup for feedback and upvotes from a maker community.
+Twelve Tools,tools,42,paid,true,30K/mo,instant,tool,https://twelve.tools,https://twelve.tools,Submits your tool to 12 directories at once; paid but saves manual work.
+Tinystartups,general,40,freemium,true,25K/mo,schedule a day,launch,https://tinystartups.com,https://tinystartups.com,Small launch board and newsletter for tiny startups.
+AIToolMate,ai,40,freemium,true,60K/mo,days,directory,https://aitoolmate.com/submit-tool/,https://aitoolmate.com,AI tools directory with a free listing option.
+Awesome Indie,general,40,free,true,20K/mo,days (PR),directory,https://github.com/bfitzsimmons/awesome-indie,https://awesomeindie.com,A GitHub 'awesome' list of indie resources; free dofollow via a merged PR.
+Startup Lister,general,35,paid,true,10K/mo,instant,tool,https://startuplister.com,https://startuplister.com,Paid service that submits your startup to many directories at once.

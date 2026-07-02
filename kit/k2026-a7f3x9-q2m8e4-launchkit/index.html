@@ -1,0 +1,352 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Your LaunchList Launch Kit</title>
+<style>
+ :root{--ink:#1A1714;--muted:#736c63;--paper:#FAF8F4;--card:#fff;--line:#e6e0d5;--accent:#C2502A;}
+ *{box-sizing:border-box;margin:0;padding:0}
+ body{background:var(--paper);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif}
+ .wrap{max-width:960px;margin:0 auto;padding:28px 24px 60px}
+ .logo{font-weight:800;font-size:22px;letter-spacing:-.02em}.logo .d{color:var(--accent)}
+ .hero{border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:8px}
+ h1{font-size:34px;letter-spacing:-.02em;margin:16px 0 6px}
+ .sub{color:var(--muted)}
+ .dl{display:inline-block;margin:18px 0 6px;background:var(--accent);color:#fff;font-weight:800;padding:13px 24px;border-radius:11px}
+ h2{font-size:22px;margin:38px 0 10px;letter-spacing:-.01em}
+ p{margin:10px 0;color:#37322c;max-width:720px}
+ table{width:100%;border-collapse:collapse;margin:14px 0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:14px}
+ th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+ th{background:#f4efe7;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);cursor:pointer;user-select:none}
+ th:hover{color:var(--ink)}
+ tr:last-child td{border-bottom:0}
+ td.num{font-weight:800;font-variant-numeric:tabular-nums}
+ .bl{color:var(--muted);font-size:12px;margin-top:2px;max-width:420px}
+ .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:12px 0}
+ .chk{display:block;padding:7px 0;border-bottom:1px solid var(--line);font-size:14px}.chk:last-child{border-bottom:0}
+ .chk span{color:var(--muted);font-size:12px}
+ textarea,input{width:100%;font:14px/1.5 inherit;border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:#fff;margin:4px 0 12px}
+ .field b{font-size:13px}
+ code{background:#efe9df;padding:1px 6px;border-radius:5px;font-size:13px}
+ footer{color:var(--muted);font-size:13px;margin-top:40px;border-top:1px solid var(--line);padding-top:16px}
+</style></head><body><div class="wrap">
+ <div class="hero"><div class="logo">Launch<span class="d">List.</span></div>
+  <h1>Your Launch Kit 🚀</h1>
+  <div class="sub">Thanks for buying. Everything below is yours — bookmark this page. Start with the CSV, then work down the checklist.</div>
+  <a class="dl" href="launchlist-directories.csv" download>⬇ Download the spreadsheet (CSV)</a>
+  <p style="font-size:13px;color:var(--muted)">90 directories · sortable · open in Sheets/Excel. This page updates as we add directories — same link.</p>
+ </div>
+
+ <h2>1 · Fill this once</h2>
+ <p>Paste your product details here, then reuse them everywhere. Most directories ask for some subset of these.</p>
+ <div class="card">
+  <div class="field"><b>Product name</b><input placeholder="e.g. Acme"></div>
+  <div class="field"><b>Tagline (≤60 chars)</b><input placeholder="One line that sells it"></div>
+  <div class="field"><b>10-word description</b><input placeholder="For 10words, Uneed, etc."></div>
+  <div class="field"><b>Short description (≤240 chars)</b><textarea rows="2" placeholder="For most directories"></textarea></div>
+  <div class="field"><b>Long description</b><textarea rows="4" placeholder="For G2, Capterra, review sites"></textarea></div>
+  <div class="field"><b>URL · logo link · category · pricing model</b><input placeholder="https://…  ·  logo  ·  category  ·  free/freemium/paid"></div>
+ </div>
+
+ <h2>2 · The full directory sheet</h2>
+ <p>Sorted by domain rating. Click a column header to re-sort. Each name links straight to its submit page. Prioritise <b>dofollow</b> for SEO and high <b>DR</b> for authority.</p>
+ <table id="t"><thead><tr>
+  <th onclick="sortT(0)">Directory</th><th onclick="sortT(1)">DR ▾</th><th onclick="sortT(2)">Price</th><th onclick="sortT(3)">Dofollow</th><th onclick="sortT(4)">Traffic</th><th onclick="sortT(5)">Category</th>
+ </tr></thead><tbody><tr>
+  <td><a href="https://news.ycombinator.com/showhn.html" target="_blank" rel="noopener">Hacker News (Show HN) ↗</a><div class="bl">Show HN can send a spike of technical, high-intent visitors. Front page is a lottery but free.</div></td>
+  <td data-sort="92" class="num">92</td><td>free</td><td>yes</td>
+  <td>10M/mo</td><td>general</td></tr><tr>
+  <td><a href="https://www.reddit.com/r/SideProject/submit" target="_blank" rel="noopener">r/SideProject ↗</a><div class="bl">Makers sharing side projects. Lead with the story, not the link.</div></td>
+  <td data-sort="92" class="num">92</td><td>free</td><td>no</td>
+  <td>—</td><td>general</td></tr><tr>
+  <td><a href="https://www.reddit.com/r/startups/submit" target="_blank" rel="noopener">r/startups ↗</a><div class="bl">Large startup community; strict self-promo rules — contribute first.</div></td>
+  <td data-sort="92" class="num">92</td><td>free</td><td>no</td>
+  <td>—</td><td>general</td></tr><tr>
+  <td><a href="https://www.reddit.com/r/SaaS/submit" target="_blank" rel="noopener">r/SaaS ↗</a><div class="bl">SaaS founders community; share launches and learnings.</div></td>
+  <td data-sort="92" class="num">92</td><td>free</td><td>no</td>
+  <td>—</td><td>saas</td></tr><tr>
+  <td><a href="https://www.reddit.com/r/EntrepreneurRideAlong/submit" target="_blank" rel="noopener">r/EntrepreneurRideAlong ↗</a><div class="bl">Build-in-public friendly subreddit for founders.</div></td>
+  <td data-sort="92" class="num">92</td><td>free</td><td>no</td>
+  <td>—</td><td>general</td></tr><tr>
+  <td><a href="https://www.reddit.com/r/InternetIsBeautiful/submit" target="_blank" rel="noopener">r/InternetIsBeautiful ↗</a><div class="bl">Huge sub for novel/useful sites; can send a big spike if it fits.</div></td>
+  <td data-sort="92" class="num">92</td><td>free</td><td>no</td>
+  <td>—</td><td>general</td></tr><tr>
+  <td><a href="https://www.reddit.com/r/roastmystartup/submit" target="_blank" rel="noopener">r/roastmystartup ↗</a><div class="bl">Post for blunt feedback on your startup.</div></td>
+  <td data-sort="92" class="num">92</td><td>free</td><td>no</td>
+  <td>—</td><td>general</td></tr><tr>
+  <td><a href="https://www.producthunt.com/posts/new" target="_blank" rel="noopener">Product Hunt ↗</a><div class="bl">The flagship launch platform. A top-5 daily finish drives real traffic, signups, and press.</div></td>
+  <td data-sort="91" class="num">91</td><td>free</td><td>no</td>
+  <td>6M/mo</td><td>general</td></tr><tr>
+  <td><a href="https://www.crunchbase.com/register" target="_blank" rel="noopener">Crunchbase ↗</a><div class="bl">The company/funding database. A profile is high-DR and widely referenced.</div></td>
+  <td data-sort="91" class="num">91</td><td>freemium</td><td>no</td>
+  <td>40M/mo</td><td>general</td></tr><tr>
+  <td><a href="https://sourceforge.net/create/" target="_blank" rel="noopener">SourceForge ↗</a><div class="bl">Long-standing software listing/download site; high DR.</div></td>
+  <td data-sort="90" class="num">90</td><td>free</td><td>yes</td>
+  <td>20M/mo</td><td>saas</td></tr><tr>
+  <td><a href="https://dev.to/new" target="_blank" rel="noopener">dev.to ↗</a><div class="bl">Developer blogging community; write a launch/build post with your link.</div></td>
+  <td data-sort="90" class="num">90</td><td>free</td><td>yes</td>
+  <td>10M/mo</td><td>dev</td></tr><tr>
+  <td><a href="https://www.awwwards.com/submit/" target="_blank" rel="noopener">Awwwards ↗</a><div class="bl">Premier web design awards; paid submission, huge DR and prestige.</div></td>
+  <td data-sort="90" class="num">90</td><td>paid</td><td>no</td>
+  <td>3M/mo</td><td>design</td></tr><tr>
+  <td><a href="https://alternativeto.net/manage-app/submit-app/" target="_blank" rel="noopener">AlternativeTo ↗</a><div class="bl">Massive 'alternatives to X' site; being listed captures competitor intent.</div></td>
+  <td data-sort="85" class="num">85</td><td>free</td><td>no</td>
+  <td>9M/mo</td><td>saas</td></tr><tr>
+  <td><a href="https://hashnode.com" target="_blank" rel="noopener">Hashnode ↗</a><div class="bl">Developer blogging platform; publish a launch story.</div></td>
+  <td data-sort="84" class="num">84</td><td>free</td><td>yes</td>
+  <td>3M/mo</td><td>dev</td></tr><tr>
+  <td><a href="https://www.g2.com/products/new" target="_blank" rel="noopener">G2 ↗</a><div class="bl">B2B review platform. Reviews drive comparison-intent buyers; claiming a profile is free.</div></td>
+  <td data-sort="83" class="num">83</td><td>free</td><td>no</td>
+  <td>20M/mo</td><td>saas</td></tr><tr>
+  <td><a href="https://www.capterra.com/vendors/sign-up" target="_blank" rel="noopener">Capterra ↗</a><div class="bl">Gartner-owned B2B software marketplace with high buyer intent.</div></td>
+  <td data-sort="82" class="num">82</td><td>free</td><td>no</td>
+  <td>12M/mo</td><td>saas</td></tr><tr>
+  <td><a href="https://www.f6s.com" target="_blank" rel="noopener">F6S ↗</a><div class="bl">Founder network + programs/accelerators directory; free company profile.</div></td>
+  <td data-sort="80" class="num">80</td><td>free</td><td>no</td>
+  <td>2M/mo</td><td>general</td></tr><tr>
+  <td><a href="https://www.getapp.com/list-your-software/" target="_blank" rel="noopener">GetApp ↗</a><div class="bl">Gartner Digital Markets marketplace; free vendor listing.</div></td>
+  <td data-sort="80" class="num">80</td><td>free</td><td>no</td>
+  <td>6M/mo</td><td>saas</td></tr><tr>
+  <td><a href="https://www.cssdesignawards.com/submit-your-site.php" target="_blank" rel="noopener">CSS Design Awards ↗</a><div class="bl">Web design awards platform; paid submission, strong DR.</div></td>
+  <td data-sort="80" class="num">80</td><td>paid</td><td>no</td>
+  <td>1M/mo</td><td>design</td></tr><tr>
+  <td><a href="https://www.indiehackers.com/products" target="_blank" rel="noopener">Indie Hackers ↗</a><div class="bl">Post your product plus a build/launch story. Warm founder audience; established accounts do best.</div></td>
+  <td data-sort="78" class="num">78</td><td>free</td><td>yes</td>
+  <td>1.5M/mo</td><td>general</td></tr><tr>
+  <td><a href="https://www.softwareadvice.com/vendors/" target="_blank" rel="noopener">Software Advice ↗</a><div class="bl">Gartner Digital Markets review site; free listing.</div></td>
+  <td data-sort="78" class="num">78</td><td>free</td><td>no</td>
+  <td>3M/mo</td><td>saas</td></tr><tr>
+  <td><a href="https://lobste.rs" target="_blank" rel="noopener">Lobsters ↗</a><div class="bl">Invite-only technical community; quality dev audience.</div></td>
+  <td data-sort="78" class="num">78</td><td>free</td><td>yes</td>
+  <td>500K/mo</td><td>dev</td></tr><tr>
+  <td><a href="https://onepagelove.com/submit" target="_blank" rel="noopener">One Page Love ↗</a><div class="bl">Curated one-page website showcase; paid submission, strong DR.</div></td>
+  <td data-sort="78" class="num">78</td><td>paid</td><td>yes</td>
+  <td>500K/mo</td><td>design</td></tr><tr>
+  <td><a href="https://theresanaiforthat.com/submit/" target="_blank" rel="noopener">There's An AI For That ↗</a><div class="bl">The largest AI-tools directory. Huge traffic; listing is paid but high-intent.</div></td>
+  <td data-sort="76" class="num">76</td><td>paid</td><td>no</td>
+  <td>12M/mo</td><td>ai</td></tr><tr>
+  <td><a href="https://www.trustradius.com/vendors" target="_blank" rel="noopener">TrustRadius ↗</a><div class="bl">In-depth B2B reviews; free vendor profile.</div></td>
+  <td data-sort="76" class="num">76</td><td>free</td><td>no</td>
+  <td>2M/mo</td><td>saas</td></tr><tr>
+  <td><a href="https://www.goodfirms.co/get-listed" target="_blank" rel="noopener">GoodFirms ↗</a><div class="bl">B2B software + services reviews; free listing.</div></td>
+  <td data-sort="76" class="num">76</td><td>free</td><td>no</td>
+  <td>1.5M/mo</td><td>saas</td></tr><tr>
+  <td><a href="https://www.siteinspire.com/submit" target="_blank" rel="noopener">SiteInspire ↗</a><div class="bl">Curated web design showcase; free submission.</div></td>
+  <td data-sort="76" class="num">76</td><td>free</td><td>no</td>
+  <td>400K/mo</td><td>design</td></tr><tr>
+  <td><a href="https://betalist.com/submit" target="_blank" rel="noopener">BetaList ↗</a><div class="bl">For early / pre-launch products. Free queue is slow; paid jumps the line.</div></td>
+  <td data-sort="75" class="num">75</td><td>freemium</td><td>yes</td>
+  <td>400K/mo</td><td>general</td></tr><tr>
+  <td><a href="https://tldr.tech/advertise" target="_blank" rel="noopener">TLDR ↗</a><div class="bl">Huge daily dev/tech newsletter; sponsorship reaches a technical audience.</div></td>
+  <td data-sort="75" class="num">75</td><td>paid</td><td>no</td>
+  <td>1M+ subs</td><td>dev</td></tr><tr>
+  <td><a href="https://betalist.com/submit" target="_blank" rel="noopener">Betalist Newsletter ↗</a><div class="bl">BetaList's newsletter goes out with featured early-stage products.</div></td>
+  <td data-sort="75" class="num">75</td><td>freemium</td><td>yes</td>
+  <td>50K subs</td><td>general</td></tr><tr>
+  <td><a href="https://www.eu-startups.com/directory/" target="_blank" rel="noopener">EU-Startups ↗</a><div class="bl">Leading European startup news site + directory; strong DR, EU focus.</div></td>
+  <td data-sort="74" class="num">74</td><td>paid</td><td>yes</td>
+  <td>400K/mo</td><td>general</td></tr><tr>
+  <td><a href="https://stackshare.io/tools/new" target="_blank" rel="noopener">StackShare ↗</a><div class="bl">Developer tech-stack community; add your dev tool.</div></td>
+  <td data-sort="74" class="num">74</td><td>free</td><td>yes</td>
+  <td>2M/mo</td><td>dev</td></tr><tr>
+  <td><a href="https://land-book.com/submit" target="_blank" rel="noopener">Land-book ↗</a><div class="bl">Landing-page gallery; great if your site design is strong.</div></td>
+  <td data-sort="74" class="num">74</td><td>freemium</td><td>yes</td>
+  <td>600K/mo</td><td>design</td></tr><tr>
+  <td><a href="https://startupstash.com/add-startup/" target="_blank" rel="noopener">Startup Stash ↗</a><div class="bl">Curated resource directory with strong DR; listing is paid but durable.</div></td>
+  <td data-sort="72" class="num">72</td><td>paid</td><td>yes</td>
+  <td>500K/mo</td><td>general</td></tr><tr>
+  <td><a href="https://www.futurepedia.io/submit-tool" target="_blank" rel="noopener">Futurepedia ↗</a><div class="bl">Popular AI-tools directory. Free listing plus paid featured placement.</div></td>
+  <td data-sort="72" class="num">72</td><td>freemium</td><td>no</td>
+  <td>3M/mo</td><td>ai</td></tr><tr>
+  <td><a href="https://growthhackers.com" target="_blank" rel="noopener">GrowthHackers ↗</a><div class="bl">Growth marketing community; share posts and case studies.</div></td>
+  <td data-sort="72" class="num">72</td><td>free</td><td>yes</td>
+  <td>300K/mo</td><td>general</td></tr><tr>
+  <td><a href="https://nextbigwhat.com" target="_blank" rel="noopener">NextBigWhat ↗</a><div class="bl">Indian tech media + product listings.</div></td>
+  <td data-sort="70" class="num">70</td><td>paid</td><td>yes</td>
+  <td>300K/mo</td><td>general</td></tr><tr>
+  <td><a href="https://www.toolify.ai/submit" target="_blank" rel="noopener">Toolify ↗</a><div class="bl">AI-tools directory with strong traffic and a free submission tier.</div></td>
+  <td data-sort="70" class="num">70</td><td>freemium</td><td>yes</td>
+  <td>4M/mo</td><td>ai</td></tr><tr>
+  <td><a href="https://www.slant.co" target="_blank" rel="noopener">Slant ↗</a><div class="bl">Crowdsourced product recommendations; add your product to relevant questions.</div></td>
+  <td data-sort="70" class="num">70</td><td>free</td><td>yes</td>
+  <td>1M/mo</td><td>saas</td></tr><tr>
+  <td><a href="https://console.dev/submit/" target="_blank" rel="noopener">Console.dev ↗</a><div class="bl">Curated newsletter of dev tools; free submission for consideration.</div></td>
+  <td data-sort="70" class="num">70</td><td>free</td><td>yes</td>
+  <td>100K subs</td><td>dev</td></tr><tr>
+  <td><a href="https://www.libhunt.com" target="_blank" rel="noopener">LibHunt ↗</a><div class="bl">Open-source library discovery and alternatives; great for OSS/dev tools.</div></td>
+  <td data-sort="70" class="num">70</td><td>free</td><td>yes</td>
+  <td>1M/mo</td><td>dev</td></tr><tr>
+  <td><a href="https://peerlist.io/launchpad" target="_blank" rel="noopener">Peerlist Launchpad ↗</a><div class="bl">Weekly launch on a professional network; solid DR and a dofollow profile link.</div></td>
+  <td data-sort="68" class="num">68</td><td>free</td><td>yes</td>
+  <td>300K/mo</td><td>general</td></tr><tr>
+  <td><a href="https://www.futuretools.io/submit-a-tool" target="_blank" rel="noopener">Future Tools ↗</a><div class="bl">Matt Wolfe's curated AI-tools collection; free submission.</div></td>
+  <td data-sort="68" class="num">68</td><td>free</td><td>no</td>
+  <td>1.5M/mo</td><td>ai</td></tr><tr>
+  <td><a href="https://www.saasworthy.com/vendors" target="_blank" rel="noopener">SaaSworthy ↗</a><div class="bl">SaaS discovery + rankings directory with solid organic traffic.</div></td>
+  <td data-sort="68" class="num">68</td><td>free</td><td>no</td>
+  <td>1M/mo</td><td>saas</td></tr><tr>
+  <td><a href="https://godly.website/submit" target="_blank" rel="noopener">Godly ↗</a><div class="bl">Astronomically good web design inspiration; free submission.</div></td>
+  <td data-sort="68" class="num">68</td><td>free</td><td>yes</td>
+  <td>400K/mo</td><td>design</td></tr><tr>
+  <td><a href="https://www.lapa.ninja/submit/" target="_blank" rel="noopener">Lapa Ninja ↗</a><div class="bl">Landing-page design inspiration gallery; free submission.</div></td>
+  <td data-sort="66" class="num">66</td><td>free</td><td>yes</td>
+  <td>400K/mo</td><td>design</td></tr><tr>
+  <td><a href="https://www.saashub.com/submit" target="_blank" rel="noopener">SaaSHub ↗</a><div class="bl">Software discovery + alternatives directory; good evergreen backlink and alternative-page SEO.</div></td>
+  <td data-sort="65" class="num">65</td><td>freemium</td><td>yes</td>
+  <td>700K/mo</td><td>saas</td></tr><tr>
+  <td><a href="https://httpster.net" target="_blank" rel="noopener">Httpster ↗</a><div class="bl">Web design inspiration gallery.</div></td>
+  <td data-sort="64" class="num">64</td><td>free</td><td>yes</td>
+  <td>200K/mo</td><td>design</td></tr><tr>
+  <td><a href="https://vendor.crozdesk.com" target="_blank" rel="noopener">Crozdesk ↗</a><div class="bl">Business software discovery platform; free vendor listing.</div></td>
+  <td data-sort="63" class="num">63</td><td>freemium</td><td>no</td>
+  <td>500K/mo</td><td>saas</td></tr><tr>
+  <td><a href="https://tekpon.com/get-listed/" target="_blank" rel="noopener">Tekpon ↗</a><div class="bl">SaaS marketplace + podcast; free and paid listings.</div></td>
+  <td data-sort="62" class="num">62</td><td>freemium</td><td>yes</td>
+  <td>400K/mo</td><td>saas</td></tr><tr>
+  <td><a href="https://minimal.gallery/submit/" target="_blank" rel="noopener">Minimal Gallery ↗</a><div class="bl">Minimal web design inspiration gallery.</div></td>
+  <td data-sort="62" class="num">62</td><td>free</td><td>yes</td>
+  <td>150K/mo</td><td>design</td></tr><tr>
+  <td><a href="https://alltopstartups.com/submit-startup/" target="_blank" rel="noopener">All Top Startups ↗</a><div class="bl">Startup blog + directory; paid submission for a feature and backlink.</div></td>
+  <td data-sort="60" class="num">60</td><td>paid</td><td>yes</td>
+  <td>150K/mo</td><td>general</td></tr><tr>
+  <td><a href="https://devhunt.org" target="_blank" rel="noopener">DevHunt ↗</a><div class="bl">Launch platform for developer tools, community-run.</div></td>
+  <td data-sort="60" class="num">60</td><td>free</td><td>yes</td>
+  <td>120K/mo</td><td>dev</td></tr><tr>
+  <td><a href="https://supertools.therundown.ai" target="_blank" rel="noopener">Supertools ↗</a><div class="bl">Curated AI tools grouped by category, by The Rundown.</div></td>
+  <td data-sort="60" class="num">60</td><td>free</td><td>no</td>
+  <td>500K/mo</td><td>ai</td></tr><tr>
+  <td><a href="https://www.serchen.com/add-listing/" target="_blank" rel="noopener">Serchen ↗</a><div class="bl">SaaS directory and reviews; free listing option.</div></td>
+  <td data-sort="60" class="num">60</td><td>freemium</td><td>yes</td>
+  <td>300K/mo</td><td>saas</td></tr><tr>
+  <td><a href="https://www.uneed.best/submit-a-tool" target="_blank" rel="noopener">Uneed ↗</a><div class="bl">Daily tool launch platform, PH-style but smaller. Free queue plus paid skip.</div></td>
+  <td data-sort="58" class="num">58</td><td>freemium</td><td>yes</td>
+  <td>150K/mo</td><td>tools</td></tr><tr>
+  <td><a href="https://topai.tools/submit" target="_blank" rel="noopener">TopAI.tools ↗</a><div class="bl">AI tool discovery directory with a free submission option.</div></td>
+  <td data-sort="58" class="num">58</td><td>freemium</td><td>yes</td>
+  <td>800K/mo</td><td>ai</td></tr><tr>
+  <td><a href="https://wip.co" target="_blank" rel="noopener">WIP ↗</a><div class="bl">Maker community for build-in-public; paid membership.</div></td>
+  <td data-sort="58" class="num">58</td><td>paid</td><td>yes</td>
+  <td>80K/mo</td><td>general</td></tr><tr>
+  <td><a href="https://saaslandingpage.com/submit/" target="_blank" rel="noopener">SaaS Landing Page ↗</a><div class="bl">Gallery of SaaS landing pages; free submission option.</div></td>
+  <td data-sort="58" class="num">58</td><td>freemium</td><td>yes</td>
+  <td>150K/mo</td><td>design</td></tr><tr>
+  <td><a href="https://www.aixploria.com/en/submit-ai/" target="_blank" rel="noopener">aixploria ↗</a><div class="bl">Large multilingual AI-tools directory.</div></td>
+  <td data-sort="57" class="num">57</td><td>freemium</td><td>yes</td>
+  <td>600K/mo</td><td>ai</td></tr><tr>
+  <td><a href="https://betapage.co/site/submit" target="_blank" rel="noopener">Betapage ↗</a><div class="bl">Curated directory of new tech startups and products.</div></td>
+  <td data-sort="56" class="num">56</td><td>freemium</td><td>yes</td>
+  <td>120K/mo</td><td>general</td></tr><tr>
+  <td><a href="https://dang.ai/submit" target="_blank" rel="noopener">Dang.ai ↗</a><div class="bl">Growing AI-tools directory with a free listing tier and dofollow link.</div></td>
+  <td data-sort="56" class="num">56</td><td>freemium</td><td>yes</td>
+  <td>300K/mo</td><td>ai</td></tr><tr>
+  <td><a href="https://www.launchingnext.com/submit/" target="_blank" rel="noopener">Launching Next ↗</a><div class="bl">Directory of new startups; free listing with a paid fast-track.</div></td>
+  <td data-sort="55" class="num">55</td><td>freemium</td><td>yes</td>
+  <td>90K/mo</td><td>general</td></tr><tr>
+  <td><a href="https://openalternative.co/submit" target="_blank" rel="noopener">ProductHunt Alternatives (OpenAlternative) ↗</a><div class="bl">Directory of open-source alternatives to popular software; great for OSS tools.</div></td>
+  <td data-sort="55" class="num">55</td><td>free</td><td>yes</td>
+  <td>200K/mo</td><td>dev</td></tr><tr>
+  <td><a href="https://opentools.ai" target="_blank" rel="noopener">OpenTools ↗</a><div class="bl">AI tools directory with reviews and a free listing.</div></td>
+  <td data-sort="55" class="num">55</td><td>freemium</td><td>yes</td>
+  <td>300K/mo</td><td>ai</td></tr><tr>
+  <td><a href="https://thesample.ai" target="_blank" rel="noopener">The Sample ↗</a><div class="bl">Newsletter discovery engine; get your newsletter in front of readers.</div></td>
+  <td data-sort="55" class="num">55</td><td>free</td><td>no</td>
+  <td>—</td><td>general</td></tr><tr>
+  <td><a href="https://easywithai.com/submit-ai-tool/" target="_blank" rel="noopener">EasyWithAI ↗</a><div class="bl">AI tools directory with free and featured listing options.</div></td>
+  <td data-sort="54" class="num">54</td><td>freemium</td><td>yes</td>
+  <td>300K/mo</td><td>ai</td></tr><tr>
+  <td><a href="https://startupbuffer.com/site/submit" target="_blank" rel="noopener">StartupBuffer ↗</a><div class="bl">Startup directory; quick dofollow backlink, paid featured option.</div></td>
+  <td data-sort="52" class="num">52</td><td>freemium</td><td>yes</td>
+  <td>120K/mo</td><td>general</td></tr><tr>
+  <td><a href="https://www.insidr.ai/submit-tool/" target="_blank" rel="noopener">Insidr AI ↗</a><div class="bl">AI tools directory and newsletter.</div></td>
+  <td data-sort="52" class="num">52</td><td>freemium</td><td>yes</td>
+  <td>250K/mo</td><td>ai</td></tr><tr>
+  <td><a href="https://getmakerlog.com" target="_blank" rel="noopener">Makerlog ↗</a><div class="bl">Community of makers logging their work in public.</div></td>
+  <td data-sort="52" class="num">52</td><td>free</td><td>yes</td>
+  <td>60K/mo</td><td>general</td></tr><tr>
+  <td><a href="https://www.sideprojectors.com/project/submit" target="_blank" rel="noopener">SideProjectors ↗</a><div class="bl">List (or sell) a side project. Free dofollow listing.</div></td>
+  <td data-sort="50" class="num">50</td><td>free</td><td>yes</td>
+  <td>70K/mo</td><td>general</td></tr><tr>
+  <td><a href="https://fazier.com/submit" target="_blank" rel="noopener">Fazier ↗</a><div class="bl">PH-alternative launch board; offers a launch badge and dofollow link.</div></td>
+  <td data-sort="50" class="num">50</td><td>freemium</td><td>yes</td>
+  <td>100K/mo</td><td>general</td></tr><tr>
+  <td><a href="https://aitools.fyi/submit" target="_blank" rel="noopener">aitools.fyi ↗</a><div class="bl">AI tools directory; free listing plus paid featured.</div></td>
+  <td data-sort="50" class="num">50</td><td>freemium</td><td>yes</td>
+  <td>200K/mo</td><td>ai</td></tr><tr>
+  <td><a href="https://saasaitools.com/submit/" target="_blank" rel="noopener">SaaS AI Tools ↗</a><div class="bl">AI + SaaS tools directory and newsletter.</div></td>
+  <td data-sort="50" class="num">50</td><td>freemium</td><td>yes</td>
+  <td>200K/mo</td><td>ai</td></tr><tr>
+  <td><a href="https://saaspirate.com/submit" target="_blank" rel="noopener">Product Hunt Alternatives (SaaSPirate) ↗</a><div class="bl">SaaS deals + directory; good for products with an offer.</div></td>
+  <td data-sort="50" class="num">50</td><td>freemium</td><td>yes</td>
+  <td>150K/mo</td><td>saas</td></tr><tr>
+  <td><a href="https://aivalley.ai/submit/" target="_blank" rel="noopener">AI Valley ↗</a><div class="bl">AI tools and news directory.</div></td>
+  <td data-sort="49" class="num">49</td><td>freemium</td><td>yes</td>
+  <td>150K/mo</td><td>ai</td></tr><tr>
+  <td><a href="https://10words.io/submit" target="_blank" rel="noopener">10words ↗</a><div class="bl">Describe your product in 10 words. Simple listing plus a dofollow link.</div></td>
+  <td data-sort="48" class="num">48</td><td>freemium</td><td>yes</td>
+  <td>60K/mo</td><td>general</td></tr><tr>
+  <td><a href="https://aiscout.net/submit-tool/" target="_blank" rel="noopener">AI Scout ↗</a><div class="bl">AI tool listings across categories; free submission tier.</div></td>
+  <td data-sort="48" class="num">48</td><td>freemium</td><td>yes</td>
+  <td>150K/mo</td><td>ai</td></tr><tr>
+  <td><a href="https://www.aitoolnet.com/submit" target="_blank" rel="noopener">AItoolnet ↗</a><div class="bl">AI tool discovery directory with free submissions.</div></td>
+  <td data-sort="47" class="num">47</td><td>freemium</td><td>yes</td>
+  <td>200K/mo</td><td>ai</td></tr><tr>
+  <td><a href="https://www.startups.fyi/submit" target="_blank" rel="noopener">Startups.fyi ↗</a><div class="bl">Directory of startups and tools; free plus featured paid.</div></td>
+  <td data-sort="46" class="num">46</td><td>freemium</td><td>yes</td>
+  <td>40K/mo</td><td>general</td></tr><tr>
+  <td><a href="https://aitoolsdirectory.com/submit" target="_blank" rel="noopener">AI Tools Directory (aitoolsdirectory) ↗</a><div class="bl">General AI tools directory; free and paid listings.</div></td>
+  <td data-sort="46" class="num">46</td><td>freemium</td><td>yes</td>
+  <td>120K/mo</td><td>ai</td></tr><tr>
+  <td><a href="https://www.tinylaunch.com" target="_blank" rel="noopener">TinyLaunch ↗</a><div class="bl">Lightweight daily launch spot for indie makers.</div></td>
+  <td data-sort="45" class="num">45</td><td>freemium</td><td>yes</td>
+  <td>50K/mo</td><td>general</td></tr><tr>
+  <td><a href="https://www.startupinspire.com/dashboard/startup/create" target="_blank" rel="noopener">Startup Inspire ↗</a><div class="bl">Community startup directory with a free listing option.</div></td>
+  <td data-sort="44" class="num">44</td><td>freemium</td><td>yes</td>
+  <td>30K/mo</td><td>general</td></tr><tr>
+  <td><a href="https://microlaunch.net" target="_blank" rel="noopener">MicroLaunch ↗</a><div class="bl">Launch board focused on micro-SaaS and indie products.</div></td>
+  <td data-sort="44" class="num">44</td><td>freemium</td><td>yes</td>
+  <td>40K/mo</td><td>general</td></tr><tr>
+  <td><a href="https://pitchwall.co/submit" target="_blank" rel="noopener">Pitchwall ↗</a><div class="bl">Post your startup for feedback and upvotes from a maker community.</div></td>
+  <td data-sort="42" class="num">42</td><td>free</td><td>yes</td>
+  <td>20K/mo</td><td>general</td></tr><tr>
+  <td><a href="https://twelve.tools" target="_blank" rel="noopener">Twelve Tools ↗</a><div class="bl">Submits your tool to 12 directories at once; paid but saves manual work.</div></td>
+  <td data-sort="42" class="num">42</td><td>paid</td><td>yes</td>
+  <td>30K/mo</td><td>tools</td></tr><tr>
+  <td><a href="https://tinystartups.com" target="_blank" rel="noopener">Tinystartups ↗</a><div class="bl">Small launch board and newsletter for tiny startups.</div></td>
+  <td data-sort="40" class="num">40</td><td>freemium</td><td>yes</td>
+  <td>25K/mo</td><td>general</td></tr><tr>
+  <td><a href="https://aitoolmate.com/submit-tool/" target="_blank" rel="noopener">AIToolMate ↗</a><div class="bl">AI tools directory with a free listing option.</div></td>
+  <td data-sort="40" class="num">40</td><td>freemium</td><td>yes</td>
+  <td>60K/mo</td><td>ai</td></tr><tr>
+  <td><a href="https://github.com/bfitzsimmons/awesome-indie" target="_blank" rel="noopener">Awesome Indie ↗</a><div class="bl">A GitHub 'awesome' list of indie resources; free dofollow via a merged PR.</div></td>
+  <td data-sort="40" class="num">40</td><td>free</td><td>yes</td>
+  <td>20K/mo</td><td>general</td></tr><tr>
+  <td><a href="https://startuplister.com" target="_blank" rel="noopener">Startup Lister ↗</a><div class="bl">Paid service that submits your startup to many directories at once.</div></td>
+  <td data-sort="35" class="num">35</td><td>paid</td><td>yes</td>
+  <td>10K/mo</td><td>general</td></tr></tbody></table>
+
+ <h2>3 · Launch-day checklist</h2>
+ <p>Tick them off (saves in your browser). Do the top-DR free ones first.</p>
+ <div class="card"><label class="chk"><input type="checkbox"> <b>Hacker News (Show HN)</b> <span>DR 92 · free</span> — <a href="https://news.ycombinator.com/showhn.html" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>r/SideProject</b> <span>DR 92 · free</span> — <a href="https://www.reddit.com/r/SideProject/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>r/startups</b> <span>DR 92 · free</span> — <a href="https://www.reddit.com/r/startups/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>r/SaaS</b> <span>DR 92 · free</span> — <a href="https://www.reddit.com/r/SaaS/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>r/EntrepreneurRideAlong</b> <span>DR 92 · free</span> — <a href="https://www.reddit.com/r/EntrepreneurRideAlong/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>r/InternetIsBeautiful</b> <span>DR 92 · free</span> — <a href="https://www.reddit.com/r/InternetIsBeautiful/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>r/roastmystartup</b> <span>DR 92 · free</span> — <a href="https://www.reddit.com/r/roastmystartup/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Product Hunt</b> <span>DR 91 · free</span> — <a href="https://www.producthunt.com/posts/new" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Crunchbase</b> <span>DR 91 · freemium</span> — <a href="https://www.crunchbase.com/register" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>SourceForge</b> <span>DR 90 · free</span> — <a href="https://sourceforge.net/create/" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>dev.to</b> <span>DR 90 · free</span> — <a href="https://dev.to/new" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Awwwards</b> <span>DR 90 · paid</span> — <a href="https://www.awwwards.com/submit/" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>AlternativeTo</b> <span>DR 85 · free</span> — <a href="https://alternativeto.net/manage-app/submit-app/" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Hashnode</b> <span>DR 84 · free</span> — <a href="https://hashnode.com" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>G2</b> <span>DR 83 · free</span> — <a href="https://www.g2.com/products/new" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Capterra</b> <span>DR 82 · free</span> — <a href="https://www.capterra.com/vendors/sign-up" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>F6S</b> <span>DR 80 · free</span> — <a href="https://www.f6s.com" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>GetApp</b> <span>DR 80 · free</span> — <a href="https://www.getapp.com/list-your-software/" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>CSS Design Awards</b> <span>DR 80 · paid</span> — <a href="https://www.cssdesignawards.com/submit-your-site.php" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Indie Hackers</b> <span>DR 78 · free</span> — <a href="https://www.indiehackers.com/products" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Software Advice</b> <span>DR 78 · free</span> — <a href="https://www.softwareadvice.com/vendors/" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Lobsters</b> <span>DR 78 · free</span> — <a href="https://lobste.rs" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>One Page Love</b> <span>DR 78 · paid</span> — <a href="https://onepagelove.com/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>There's An AI For That</b> <span>DR 76 · paid</span> — <a href="https://theresanaiforthat.com/submit/" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>TrustRadius</b> <span>DR 76 · free</span> — <a href="https://www.trustradius.com/vendors" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>GoodFirms</b> <span>DR 76 · free</span> — <a href="https://www.goodfirms.co/get-listed" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>SiteInspire</b> <span>DR 76 · free</span> — <a href="https://www.siteinspire.com/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>BetaList</b> <span>DR 75 · freemium</span> — <a href="https://betalist.com/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>TLDR</b> <span>DR 75 · paid</span> — <a href="https://tldr.tech/advertise" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Betalist Newsletter</b> <span>DR 75 · freemium</span> — <a href="https://betalist.com/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>EU-Startups</b> <span>DR 74 · paid</span> — <a href="https://www.eu-startups.com/directory/" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>StackShare</b> <span>DR 74 · free</span> — <a href="https://stackshare.io/tools/new" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Land-book</b> <span>DR 74 · freemium</span> — <a href="https://land-book.com/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Startup Stash</b> <span>DR 72 · paid</span> — <a href="https://startupstash.com/add-startup/" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Futurepedia</b> <span>DR 72 · freemium</span> — <a href="https://www.futurepedia.io/submit-tool" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>GrowthHackers</b> <span>DR 72 · free</span> — <a href="https://growthhackers.com" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>NextBigWhat</b> <span>DR 70 · paid</span> — <a href="https://nextbigwhat.com" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Toolify</b> <span>DR 70 · freemium</span> — <a href="https://www.toolify.ai/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Slant</b> <span>DR 70 · free</span> — <a href="https://www.slant.co" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Console.dev</b> <span>DR 70 · free</span> — <a href="https://console.dev/submit/" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>LibHunt</b> <span>DR 70 · free</span> — <a href="https://www.libhunt.com" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Peerlist Launchpad</b> <span>DR 68 · free</span> — <a href="https://peerlist.io/launchpad" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Future Tools</b> <span>DR 68 · free</span> — <a href="https://www.futuretools.io/submit-a-tool" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>SaaSworthy</b> <span>DR 68 · free</span> — <a href="https://www.saasworthy.com/vendors" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Godly</b> <span>DR 68 · free</span> — <a href="https://godly.website/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Lapa Ninja</b> <span>DR 66 · free</span> — <a href="https://www.lapa.ninja/submit/" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>SaaSHub</b> <span>DR 65 · freemium</span> — <a href="https://www.saashub.com/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Httpster</b> <span>DR 64 · free</span> — <a href="https://httpster.net" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Crozdesk</b> <span>DR 63 · freemium</span> — <a href="https://vendor.crozdesk.com" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Tekpon</b> <span>DR 62 · freemium</span> — <a href="https://tekpon.com/get-listed/" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Minimal Gallery</b> <span>DR 62 · free</span> — <a href="https://minimal.gallery/submit/" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>All Top Startups</b> <span>DR 60 · paid</span> — <a href="https://alltopstartups.com/submit-startup/" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>DevHunt</b> <span>DR 60 · free</span> — <a href="https://devhunt.org" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Supertools</b> <span>DR 60 · free</span> — <a href="https://supertools.therundown.ai" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Serchen</b> <span>DR 60 · freemium</span> — <a href="https://www.serchen.com/add-listing/" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Uneed</b> <span>DR 58 · freemium</span> — <a href="https://www.uneed.best/submit-a-tool" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>TopAI.tools</b> <span>DR 58 · freemium</span> — <a href="https://topai.tools/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>WIP</b> <span>DR 58 · paid</span> — <a href="https://wip.co" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>SaaS Landing Page</b> <span>DR 58 · freemium</span> — <a href="https://saaslandingpage.com/submit/" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>aixploria</b> <span>DR 57 · freemium</span> — <a href="https://www.aixploria.com/en/submit-ai/" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Betapage</b> <span>DR 56 · freemium</span> — <a href="https://betapage.co/site/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Dang.ai</b> <span>DR 56 · freemium</span> — <a href="https://dang.ai/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Launching Next</b> <span>DR 55 · freemium</span> — <a href="https://www.launchingnext.com/submit/" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>ProductHunt Alternatives (OpenAlternative)</b> <span>DR 55 · free</span> — <a href="https://openalternative.co/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>OpenTools</b> <span>DR 55 · freemium</span> — <a href="https://opentools.ai" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>The Sample</b> <span>DR 55 · free</span> — <a href="https://thesample.ai" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>EasyWithAI</b> <span>DR 54 · freemium</span> — <a href="https://easywithai.com/submit-ai-tool/" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>StartupBuffer</b> <span>DR 52 · freemium</span> — <a href="https://startupbuffer.com/site/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Insidr AI</b> <span>DR 52 · freemium</span> — <a href="https://www.insidr.ai/submit-tool/" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Makerlog</b> <span>DR 52 · free</span> — <a href="https://getmakerlog.com" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>SideProjectors</b> <span>DR 50 · free</span> — <a href="https://www.sideprojectors.com/project/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Fazier</b> <span>DR 50 · freemium</span> — <a href="https://fazier.com/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>aitools.fyi</b> <span>DR 50 · freemium</span> — <a href="https://aitools.fyi/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>SaaS AI Tools</b> <span>DR 50 · freemium</span> — <a href="https://saasaitools.com/submit/" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Product Hunt Alternatives (SaaSPirate)</b> <span>DR 50 · freemium</span> — <a href="https://saaspirate.com/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>AI Valley</b> <span>DR 49 · freemium</span> — <a href="https://aivalley.ai/submit/" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>10words</b> <span>DR 48 · freemium</span> — <a href="https://10words.io/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>AI Scout</b> <span>DR 48 · freemium</span> — <a href="https://aiscout.net/submit-tool/" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>AItoolnet</b> <span>DR 47 · freemium</span> — <a href="https://www.aitoolnet.com/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Startups.fyi</b> <span>DR 46 · freemium</span> — <a href="https://www.startups.fyi/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>AI Tools Directory (aitoolsdirectory)</b> <span>DR 46 · freemium</span> — <a href="https://aitoolsdirectory.com/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>TinyLaunch</b> <span>DR 45 · freemium</span> — <a href="https://www.tinylaunch.com" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Startup Inspire</b> <span>DR 44 · freemium</span> — <a href="https://www.startupinspire.com/dashboard/startup/create" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>MicroLaunch</b> <span>DR 44 · freemium</span> — <a href="https://microlaunch.net" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Pitchwall</b> <span>DR 42 · free</span> — <a href="https://pitchwall.co/submit" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Twelve Tools</b> <span>DR 42 · paid</span> — <a href="https://twelve.tools" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Tinystartups</b> <span>DR 40 · freemium</span> — <a href="https://tinystartups.com" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>AIToolMate</b> <span>DR 40 · freemium</span> — <a href="https://aitoolmate.com/submit-tool/" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Awesome Indie</b> <span>DR 40 · free</span> — <a href="https://github.com/bfitzsimmons/awesome-indie" target="_blank" rel="noopener">submit ↗</a></label><label class="chk"><input type="checkbox"> <b>Startup Lister</b> <span>DR 35 · paid</span> — <a href="https://startuplister.com" target="_blank" rel="noopener">submit ↗</a></label></div>
+
+ <footer>LaunchList Launch Kit · updated regularly. Questions or a broken link? This kit is maintained — check back any time.</footer>
+</div>
+<script>
+ // persist checkboxes
+ document.querySelectorAll('.chk input').forEach((c,i)=>{
+   const k='ll_chk_'+i; c.checked=localStorage.getItem(k)==='1';
+   c.addEventListener('change',()=>localStorage.setItem(k,c.checked?'1':'0'));
+ });
+ // sortable table
+ let dir=1,last=1;
+ function sortT(col){
+   const tb=document.querySelector('#t tbody'); const rows=[...tb.rows];
+   dir = (col===last)? -dir : 1; last=col;
+   rows.sort((a,b)=>{
+     let x=a.cells[col],y=b.cells[col];
+     let xv=x.dataset.sort?+x.dataset.sort:x.innerText.toLowerCase();
+     let yv=y.dataset.sort?+y.dataset.sort:y.innerText.toLowerCase();
+     return xv<yv?-dir:xv>yv?dir:0;
+   });
+   rows.forEach(r=>tb.appendChild(r));
+ }
+</script>
+</body></html>
